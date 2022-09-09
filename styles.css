@@ -1,0 +1,86 @@
+@charset "UTF-8";
+
+/*==========Root==========*/
+:root {
+    --facebook-color: #38548F;
+    --twitter-color: #28A0D5;
+    --instagram-color: #B1319F;
+    --youtube-color: #F10002;
+    --telegram-color: #2FA0D6;
+    --github-color: #000000;
+    --whatsapp-color: #2BAF3E;
+    --bg-color: #e3edf7;
+    --white-color: #fff;
+    --dark-color: #000;
+    --shadow-a: 6px 6px 10px -1px rgba(0, 0, 0, 0.15), -6px -6px 10px -1px rgba(255, 255, 255, 0.7);
+    --shadow-a-hover: inset 4px 4px 6px -1px rgba(0, 0, 0, 0.2), inset -4px -4px 6px -1px rgba(255, 255, 255, 0.7), -0.5px -0.5px 0px rgba(255, 255, 255, 1), -0.5px -0.5px 0px rgba(0, 0, 0, 0.15), 0px 12px 10px -10px rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 0, 0.01);
+    --border: 1px solid rgba(0, 0, 0, 0);
+    --padding-social: 200px 0 100px;
+}
+
+/*==========Reset CSS==========*/
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    outline: none;
+    box-sizing: border-box;
+}
+
+/*==========Body==========*/
+body {
+    background: var(--bg-color);
+}
+.social-media {
+    display: flex;
+    justify-content: center;   
+    padding: var(--padding-social);
+}
+.social-media a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: var(--bg-color);
+    width: 75px;
+    height: 75px;
+    margin: auto 15px;
+    border-radius: 50%;
+    box-shadow: var(--shadow-a);
+    border: var(--border);
+    transition: transform 0.5s;
+}
+.social-media a:hover {
+    box-shadow: var(--shadow-a-hover);
+    transform: translateY(2px);
+}
+.social-media a i {
+    font-size: 35px;
+    color: var(--white-color);
+    transition: transform 0.5s;
+}
+.social-media a:hover i {
+    transform: scale(0.90);
+}
+.social-media a:hover .uil-facebook-f {
+    color: var(--facebook-color);
+}
+.social-media a:hover .uil-twitter-alt {
+    color: var(--twitter-color);
+}
+.social-media a:hover .uil-instagram {
+    color: var(--instagram-color);
+}
+.social-media a:hover .uil-youtube {
+    color: var(--youtube-color);
+}
+.social-media a:hover .uil-telegram-alt {
+    color: var(--telegram-color);
+}
+.social-media a:hover .uil-github-alt {
+    color: var(--github-color);
+}
+.social-media a:hover .uil-whatsapp {
+    color: var(--whatsapp-color);
+}
